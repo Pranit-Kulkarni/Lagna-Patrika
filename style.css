@@ -1,0 +1,289 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html, body{
+  width:100%;
+  height:100%;
+  background:#000;
+  overflow:hidden;
+}
+
+.page{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.bg-img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:1;
+  pointer-events:none;
+}
+
+/* PAGE 1 */
+
+#page1{
+  z-index:10;
+  transition:1s ease;
+}
+
+.page-one-content{
+  position:relative;
+  z-index:5;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#704314;
+  padding:24px;
+}
+
+.page-one-content h1{
+  font-family:'Noto Serif Devanagari', serif;
+  font-size:52px;
+  line-height:1.25;
+  font-weight:800;
+  margin-top:80px;
+  margin-bottom:34px;
+}
+
+.small-and{
+  font-size:30px;
+  line-height:1.1;
+  font-weight:700;
+}
+
+.open-btn{
+  border:none;
+  padding:14px 34px;
+  border-radius:40px;
+  background:linear-gradient(135deg, #d9a441, #8b5a12);
+  color:white;
+  font-family:'Noto Serif Devanagari', serif;
+  font-size:19px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 10px 24px rgba(0,0,0,.25);
+  z-index:20;
+}
+
+#page1.opening{
+  transform:scale(1.04);
+  opacity:0;
+}
+
+/* PAGE 2 */
+
+#page2{
+  display:none;
+}
+
+.page-two{
+  z-index:1;
+}
+
+.matter{
+  position:absolute;
+  z-index:5;
+
+  top:12.2%;
+  left:50%;
+  transform:translateX(-50%);
+
+  width:80%;
+  max-width:470px;
+
+  text-align:center;
+  color:#6d3f12;
+  font-family:'Noto Serif Devanagari', serif;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+
+  overflow:visible;
+}
+
+.blessing{
+  font-size:11px;
+  line-height:1.22;
+  margin-bottom:5px;
+  font-weight:700;
+}
+
+.intro{
+  font-size:11px;
+  line-height:1.28;
+  margin-bottom:5px;
+  font-weight:600;
+}
+
+.name{
+  font-size:29px;
+  line-height:1.02;
+  font-weight:800;
+  margin:2px 0;
+  color:#6d3f12;
+}
+
+.parent{
+  font-size:10.6px;
+  line-height:1.2;
+  margin-bottom:4px;
+  font-weight:600;
+}
+
+.and{
+  font-size:16px;
+  line-height:1;
+  margin:2px 0;
+  font-weight:700;
+}
+
+.main-text{
+  font-size:10.8px;
+  line-height:1.26;
+  margin:4px 0;
+  font-weight:600;
+}
+
+.venue-title,
+.family-title{
+  font-size:13.4px;
+  line-height:1.2;
+  font-weight:800;
+  margin-top:4px;
+  margin-bottom:1px;
+}
+
+.venue{
+  font-size:10.3px;
+  line-height:1.22;
+  margin-bottom:4px;
+  font-weight:600;
+}
+
+.family{
+  font-size:9.7px;
+  line-height:1.2;
+  margin-bottom:3px;
+  font-weight:600;
+}
+
+.address{
+  font-size:8.8px;
+  line-height:1.18;
+  margin-bottom:4px;
+  font-weight:600;
+}
+
+.location-btn{
+  display:inline-block;
+  color:#6d3f12;
+  text-decoration:none;
+  border:1px solid #b58b4b;
+  border-radius:34px;
+  padding:4px 16px;
+  background:rgba(255,255,255,.72);
+  font-size:11.5px;
+  font-weight:800;
+  margin-top:1px;
+}
+
+/* PHONE */
+
+@media(max-width:768px){
+
+  .page-one-content h1{
+    font-size:49px;
+  }
+
+  .small-and{
+    font-size:28px;
+  }
+
+  .matter{
+    top:12.8%;
+    width:81%;
+    max-width:390px;
+  }
+
+  .blessing{
+    font-size:9.1px;
+    line-height:1.16;
+    margin-bottom:3px;
+  }
+
+  .intro{
+    font-size:9.3px;
+    line-height:1.2;
+    margin-bottom:4px;
+  }
+
+  .name{
+    font-size:25px;
+    line-height:1;
+    margin:1px 0;
+  }
+
+  .parent{
+    font-size:8.9px;
+    line-height:1.16;
+    margin-bottom:3px;
+  }
+
+  .and{
+    font-size:14px;
+    margin:1px 0;
+  }
+
+  .main-text{
+    font-size:9.1px;
+    line-height:1.18;
+    margin:3px 0;
+  }
+
+  .venue-title,
+  .family-title{
+    font-size:11.6px;
+    line-height:1.1;
+    margin-top:3px;
+    margin-bottom:1px;
+  }
+
+  .venue{
+    font-size:8.8px;
+    line-height:1.16;
+    margin-bottom:3px;
+  }
+
+  .family{
+    font-size:8.1px;
+    line-height:1.14;
+    margin-bottom:2px;
+  }
+
+  .address{
+    font-size:7.4px;
+    line-height:1.12;
+    margin-bottom:3px;
+  }
+
+  .location-btn{
+    font-size:10px;
+    padding:3px 13px;
+    margin-top:1px;
+  }
+}
