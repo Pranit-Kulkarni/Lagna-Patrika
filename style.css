@@ -274,19 +274,20 @@ body {
   }
 
   .side-blessings {
-    width: 94%;
+    width: 82%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
-    font-size: 9.6px;
+    font-size: 9.8px;
     line-height: 1.15;
     font-weight: 700;
   }
 
   .side-blessings span {
     flex: 1;
+    display: block;
   }
 
   .side-blessings span:first-child {
@@ -354,12 +355,13 @@ body {
     margin: 3px 0 5px;
   }
 
+
   .aher {
-    font-size: 11.2px;
-    line-height: 1.18;
-    margin-top: 3px;
+    font-size: 10.4px;
+    line-height: 1.16;
+    margin-top: 2px;
     font-weight: 700;
-    max-width: 84%;
+    max-width: 72%;
   }
 
   .venue-title,
