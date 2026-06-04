@@ -1,348 +1,370 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-  width:100%;
-  height:100%;
-  background:#000;
-  overflow:hidden;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
 }
 
-.page{
-  position:fixed;
-  inset:0;
-  width:100%;
-  height:100vh;
-  overflow:hidden;
+.page {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.bg-img{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  z-index:1;
-  pointer-events:none;
+.bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* PAGE 1 */
 
-#page1{
-  z-index:10;
-  transition:1s ease;
+#page1 {
+  z-index: 10;
+  transition: 1s ease;
 }
 
-.page-one-content{
-  position:relative;
-  z-index:5;
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  color:#704314;
-  padding:24px;
+.page-one-content {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #704314;
+  padding: 24px;
 }
 
-.page-one-content h1{
-  font-family:'Noto Serif Devanagari', serif;
-  font-size:52px;
-  line-height:1.25;
-  font-weight:800;
-  margin-top:80px;
-  margin-bottom:34px;
+.page-one-content h1 {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: 52px;
+  line-height: 1.25;
+  font-weight: 800;
+  margin-top: 80px;
+  margin-bottom: 34px;
 }
 
-.small-and{
-  font-size:30px;
-  line-height:1.1;
-  font-weight:700;
+.small-and {
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
-.open-btn{
-  border:none;
-  padding:14px 34px;
-  border-radius:40px;
-  background:linear-gradient(135deg, #d9a441, #8b5a12);
-  color:white;
-  font-family:'Noto Serif Devanagari', serif;
-  font-size:19px;
-  font-weight:700;
-  cursor:pointer;
-  box-shadow:0 10px 24px rgba(0,0,0,.25);
-  z-index:20;
+.open-btn {
+  border: none;
+  padding: 14px 34px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #d9a441, #8b5a12);
+  color: white;
+  font-family: 'Noto Serif Devanagari', serif;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+  z-index: 20;
 }
 
-#page1.opening{
-  transform:scale(1.04);
-  opacity:0;
+#page1.opening {
+  transform: scale(1.04);
+  opacity: 0;
 }
 
 /* PAGE 2 */
 
-#page2{
-  display:none;
+#page2 {
+  display: none;
 }
 
-.page-two{
-  z-index:1;
+.page-two {
+  z-index: 1;
 }
 
-.matter{
-  position:absolute;
-  z-index:5;
-
-  top:12.2%;
-  left:50%;
-  transform:translateX(-50%);
-
-  width:84%;
-  max-width:470px;
-
-  text-align:center;
-  color:#111;
-  font-family:'Noto Serif Devanagari', serif;
-
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:flex-start;
-
-  overflow:visible;
+.matter {
+  position: absolute;
+  z-index: 5;
+  top: 12.2%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 84%;
+  max-width: 470px;
+  text-align: center;
+  color: #111;
+  font-family: 'Noto Serif Devanagari', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
 }
 
 /* BLESSINGS */
 
-.blessing{
-  width:100%;
-  margin-bottom:7px;
-  font-weight:700;
-  color:#111;
-  font-family:'Noto Serif Devanagari', serif;
+.blessing {
+  width: 100%;
+  margin-bottom: 7px;
+  font-weight: 700;
+  color: #111;
+  font-family: 'Noto Serif Devanagari', serif;
 }
 
-.ganesh-line{
-  font-size:12.8px;
-  line-height:1.25;
-  text-align:center;
-  margin-bottom:6px;
-  font-weight:700;
+.ganesh-line {
+  font-size: 12.8px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 6px;
+  font-weight: 700;
 }
 
-.side-blessings{
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:10px;
-  font-size:12px;
-  line-height:1.2;
-  white-space:nowrap;
-  font-weight:700;
+.side-blessings {
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 11.2px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.side-blessings span {
+  flex: 1;
+}
+
+.side-blessings span:first-child {
+  text-align: left;
+}
+
+.side-blessings span:last-child {
+  text-align: right;
 }
 
 /* MATTER */
 
-.intro{
-  font-size:13px;
-  line-height:1.34;
-  margin-bottom:8px;
-  font-weight:600;
+.intro {
+  font-size: 13.4px;
+  line-height: 1.36;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
-.name{
-  font-size:36px;
-  line-height:1.04;
-  font-weight:800;
-  margin:4px 0;
-  color:#111;
+.name {
+  font-size: 36px;
+  line-height: 1.04;
+  font-weight: 800;
+  margin: 4px 0;
+  color: #111;
 }
 
-.parent{
-  font-size:13px;
-  line-height:1.32;
-  margin-bottom:6px;
-  font-weight:600;
+.parent {
+  font-size: 13.4px;
+  line-height: 1.34;
+  margin-bottom: 6px;
+  font-weight: 600;
 }
 
-.and{
-  font-size:18px;
-  line-height:1;
-  margin:4px 0;
-  font-weight:700;
+.and {
+  font-size: 19px;
+  line-height: 1;
+  margin: 4px 0;
+  font-weight: 700;
 }
 
-.main-text{
-  font-size:13.4px;
-  line-height:1.38;
-  margin:7px 0;
-  font-weight:600;
+.main-text {
+  font-size: 13.8px;
+  line-height: 1.4;
+  margin: 7px 0;
+  font-weight: 600;
 }
 
-.family-title{
-  font-size:18px;
-  line-height:1.2;
-  font-weight:800;
-  margin-top:8px;
-  margin-bottom:4px;
-  color:#111;
+.family-title {
+  font-size: 18.5px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  color: #111;
 }
 
-.family{
-  font-size:12.8px;
-  line-height:1.3;
-  margin-bottom:8px;
-  font-weight:600;
+.family {
+  font-size: 13.2px;
+  line-height: 1.32;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 /* LOCATION BUTTON */
 
-.location-btn{
-  display:inline-block;
-  color:#6d3f12;
-  text-decoration:none;
-  border:1px solid #b58b4b;
-  border-radius:34px;
-  padding:5px 18px;
-  background:rgba(255,255,255,.72);
-  font-size:13px;
-  font-weight:800;
-  margin:3px 0 6px;
+.location-btn {
+  display: inline-block;
+  color: #6d3f12;
+  text-decoration: none;
+  border: 1px solid #b58b4b;
+  border-radius: 34px;
+  padding: 5px 18px;
+  background: rgba(255, 255, 255, .72);
+  font-size: 13px;
+  font-weight: 800;
+  margin: 3px 0 6px;
 }
 
 /* AHER LINE */
 
-.aher{
-  font-size:11.6px;
-  line-height:1.22;
-  margin-top:3px;
-  font-weight:700;
-  max-width:96%;
+.aher {
+  font-size: 11.8px;
+  line-height: 1.22;
+  margin-top: 3px;
+  font-weight: 700;
+  max-width: 88%;
 }
 
 /* HIDE UNUSED SECTIONS */
 
 .venue-title,
 .venue,
-.address{
-  display:none;
+.address {
+  display: none;
 }
 
 /* PHONE */
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-  .page-one-content h1{
-    font-size:49px;
+  .page-one-content h1 {
+    font-size: 49px;
   }
 
-  .small-and{
-    font-size:28px;
+  .small-and {
+    font-size: 28px;
   }
 
-  .matter{
-    top:11.6%;
-    width:86%;
-    max-width:390px;
+  .matter {
+    top: 12%;
+    width: 86%;
+    max-width: 390px;
   }
 
-  .blessing{
-    width:100%;
-    margin-bottom:6px;
-    font-weight:700;
-    color:#111;
+  .blessing {
+    width: 100%;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #111;
   }
 
-  .ganesh-line{
-    font-size:11.5px;
-    line-height:1.2;
-    text-align:center;
-    margin-bottom:5px;
+  .ganesh-line {
+    font-size: 11.8px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 5px;
   }
 
-  .side-blessings{
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:5px;
-    font-size:10.5px;
-    line-height:1.15;
-    white-space:nowrap;
+  .side-blessings {
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 9.6px;
+    line-height: 1.15;
+    font-weight: 700;
   }
 
-  .intro{
-    font-size:11.8px;
-    line-height:1.28;
-    margin-bottom:7px;
+  .side-blessings span {
+    flex: 1;
   }
 
-  .name{
-    font-size:33px;
-    line-height:1.02;
-    margin:3px 0;
-    color:#111;
+  .side-blessings span:first-child {
+    text-align: left;
   }
 
-  .parent{
-    font-size:11.7px;
-    line-height:1.24;
-    margin-bottom:5px;
+  .side-blessings span:last-child {
+    text-align: right;
   }
 
-  .and{
-    font-size:17px;
-    margin:2px 0;
+  .intro {
+    font-size: 12.2px;
+    line-height: 1.3;
+    margin-bottom: 7px;
   }
 
-  .main-text{
-    font-size:12.1px;
-    line-height:1.29;
-    margin:5px 0;
+  /* KEEPING NAMES SAME */
+  .name {
+    font-size: 33px;
+    line-height: 1.02;
+    margin: 3px 0;
+    color: #111;
   }
 
-  .family-title{
-    font-size:16px;
-    margin-top:7px;
-    margin-bottom:4px;
-    color:#111;
+  .parent {
+    font-size: 12.1px;
+    line-height: 1.26;
+    margin-bottom: 5px;
   }
 
-  .family{
-    font-size:11.5px;
-    line-height:1.23;
-    margin-bottom:7px;
+  .and {
+    font-size: 18px;
+    margin: 2px 0;
   }
 
-  .location-btn{
-    display:inline-block;
-    color:#6d3f12;
-    text-decoration:none;
-    border:1px solid #b58b4b;
-    border-radius:34px;
-    padding:5px 16px;
-    background:rgba(255,255,255,.72);
-    font-size:12.6px;
-    font-weight:800;
-    margin:3px 0 5px;
+  .main-text {
+    font-size: 12.6px;
+    line-height: 1.32;
+    margin: 5px 0;
   }
 
-  .aher{
-    font-size:11.2px;
-    line-height:1.16;
-    margin-top:3px;
-    font-weight:700;
-    max-width:96%;
+  .family-title {
+    font-size: 16.8px;
+    margin-top: 7px;
+    margin-bottom: 4px;
+    color: #111;
+  }
+
+  .family {
+    font-size: 11.9px;
+    line-height: 1.24;
+    margin-bottom: 7px;
+  }
+
+  .location-btn {
+    display: inline-block;
+    color: #6d3f12;
+    text-decoration: none;
+    border: 1px solid #b58b4b;
+    border-radius: 34px;
+    padding: 5px 16px;
+    background: rgba(255, 255, 255, .72);
+    font-size: 12.8px;
+    font-weight: 800;
+    margin: 3px 0 5px;
+  }
+
+  .aher {
+    font-size: 11.2px;
+    line-height: 1.18;
+    margin-top: 3px;
+    font-weight: 700;
+    max-width: 84%;
   }
 
   .venue-title,
   .venue,
-  .address{
-    display:none;
+  .address {
+    display: none;
   }
 }
